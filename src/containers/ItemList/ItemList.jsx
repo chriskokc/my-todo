@@ -1,7 +1,7 @@
 import "./ItemList.scss";
 import TodoItem from "../../components/TodoItem/TodoItem";
 
-const ItemList = ({ tooAddItem, handleCheck, handleRemoveItem, isChecked }) => {
+const ItemList = ({ tooAddItem, handleCheck, handleRemoveItem }) => {
   const ItemJSX = tooAddItem.map((item) => {
     return (
       <TodoItem
@@ -10,7 +10,6 @@ const ItemList = ({ tooAddItem, handleCheck, handleRemoveItem, isChecked }) => {
         userMessage={item}
         handleCheck={handleCheck}
         handleRemoveItem={handleRemoveItem}
-        isChecked={isChecked}
       />
     );
   });

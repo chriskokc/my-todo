@@ -67,7 +67,6 @@ const App = () => {
           tooAddItem={toAddList}
           handleCheck={handleCheck}
           handleRemoveItem={handleRemoveItem}
-          isChecked={isChecked}
         />
       )}
     </>

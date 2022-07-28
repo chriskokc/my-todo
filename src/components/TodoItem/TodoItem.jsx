@@ -1,12 +1,6 @@
 import "./TodoItem.scss";
 
-const TodoItem = ({
-  item,
-  userMessage,
-  handleCheck,
-  handleRemoveItem,
-  isChecked,
-}) => {
+const TodoItem = ({ item, userMessage, handleCheck, handleRemoveItem }) => {
   return (
     <div className="to-do-item">
       <input
