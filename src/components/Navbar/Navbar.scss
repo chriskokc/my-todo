@@ -1,0 +1,16 @@
+@use "../../assets/scss/variables" as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-navbar;
+    height: 10vh;
+
+    &__brand {
+        font-weight: 700;
+        font-size: 1.2rem;
+        background-color: $color-navbar;
+        margin: 1rem 1.5rem;
+    }
+}

@@ -1,0 +1,14 @@
+@use "../../assets/scss/variables" as *;
+
+button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    font-weight: 500;
+    margin: 1rem 1.2rem;
+    height: 1.8rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
