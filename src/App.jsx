@@ -8,6 +8,7 @@ const App = () => {
   const [message, setMessage] = useState("");
   const [itemList, setItemList] = useState(false);
   const [toShowList, setToShowList] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
   const [toAddList, setToAddList] = useState([]);
 
   const handleUserInput = (event) => {
@@ -26,8 +27,6 @@ const App = () => {
   const handleRemoveItem = (event) => {
     const deepCopyToAddList = [...toAddList];
 
-    console.log(event.target.classList[1].split("--")[1]);
-
     const filteredDeepCopyToAddList = deepCopyToAddList.filter((item) => {
       return item !== event.target.classList[1].split("--")[1];
     });
@@ -35,9 +34,8 @@ const App = () => {
   };
 
   const handleCheck = (event) => {
-    const dashIndex = event.target.name.indexOf("-");
-    // event.target.name.substring(dashIndex + 1);
-    console.log(event.target.name.substring(dashIndex + 1));
+    setIsChecked(!isChecked);
+    event.target.nextElementSibling.classList.toggle("cross-item");
   };
 
   const handleReset = () => {
@@ -69,6 +67,7 @@ const App = () => {
           tooAddItem={toAddList}
           handleCheck={handleCheck}
           handleRemoveItem={handleRemoveItem}
+          isChecked={isChecked}
         />
       )}
     </>
