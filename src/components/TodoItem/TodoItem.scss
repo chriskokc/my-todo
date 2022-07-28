@@ -1,0 +1,31 @@
+@use "../../assets/scss/variables" as *;
+
+.to-do-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0.5rem 1.8rem;
+    padding: 0 1rem;
+    background-color: $color-item;
+    border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid $color-navbar;
+
+    &__checkbox {
+        font-size: 1.3rem;
+    }
+
+    &__message {
+        background-color: $color-item;
+        font-size: 1.1rem;
+    }
+
+    &__icon {
+        background-color: $color-item;
+        font-size: 1.2rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
