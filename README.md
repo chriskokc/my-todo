@@ -11,3 +11,7 @@ GH page: https://chriskokc.github.io/my-todo/
 5. A reset functionality
 
 ## Prototype
+- <em>Mobile view</em>:
+
+<img width="320" height="450" alt="My Todo app" src="https://user-images.githubusercontent.com/87203804/181582781-dd39f45b-543a-435b-ba50-6a03e1213a9a.png">
+
