@@ -1,13 +1,11 @@
 import "./ItemList.scss";
 import TodoItem from "../../components/TodoItem/TodoItem";
 
-const ItemList = () => {
-  return (
-    <div className="itemlist">
-      <TodoItem item="1" userMessage="eat some bread" />
-      <TodoItem item="2" userMessage="drink more water" />
-    </div>
-  );
+const ItemList = ({ tooAddItem }) => {
+  const ItemJSX = tooAddItem.map((item) => {
+    return <TodoItem key={item} item={item} userMessage={item} />;
+  });
+  return <div className="itemlist">{ItemJSX}</div>;
 };
 
 export default ItemList;

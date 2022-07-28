@@ -2,7 +2,7 @@ import "./TodoItem.scss";
 
 const TodoItem = ({ item, userMessage }) => {
   return (
-    <div className="to-do-item" key={item}>
+    <div className="to-do-item">
       <input
         name={`checkbox-${item}`}
         className="to-do-item__checkbox"
