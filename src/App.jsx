@@ -13,6 +13,10 @@ const App = () => {
   };
 
   const handleAddItem = () => {
+    if (message === "") {
+      alert("Please add your todo.");
+      return;
+    }
     setItemList(!itemList);
   };
 
