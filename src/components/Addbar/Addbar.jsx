@@ -1,6 +1,6 @@
 import "./Addbar.scss";
 
-const Addbar = () => {
+const Addbar = ({ value, handleUserInput, handleAddItem }) => {
   return (
     <div className="add-bar">
       <input
@@ -9,8 +9,12 @@ const Addbar = () => {
         className="add-bar__field"
         type="text"
         placeholder="add your task here.."
+        value={value}
+        onChange={handleUserInput}
       />
-      <span className="add-bar__icon">🙋🏻‍♂️</span>
+      <span className="add-bar__icon" onClick={handleAddItem}>
+        🙋🏻‍♂️
+      </span>
     </div>
   );
 };
